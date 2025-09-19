@@ -71,44 +71,6 @@ La clase `Libro` contiene todos los atributos requeridos:
 - **Lombok** - Reducción de código boilerplate
 - **Maven** - Gestión de dependencias
 
-## Estructura del Proyecto
-
-```
-src/main/java/com/biblioteca/
-├── LibraryManagementApplication.java  # Aplicación principal
-├── adapter/
-│   └── LegacyLibroAdapter.java        # Patrón Adapter
-├── builder/
-│   └── LibroBuilder.java              # Patrón Builder
-├── config/
-│   └── DatabaseConfig.java           # Configuración DB + Singleton
-├── controller/
-│   └── LibroController.java          # REST Controller
-├── decorator/
-│   └── PrestamoDecorator.java        # Patrón Decorator
-├── demo/
-│   └── PatternDemoRunner.java        # Demostración de patrones
-├── factory/
-│   ├── AbstractLibroFactory.java     # Abstract Factory
-│   ├── ConcreteFactories.java        
-│   └── LibroFactory.java             # Factory Method
-├── model/
-│   ├── EstadoLibro.java              # Enum estados
-│   ├── FormatoLibro.java             # Enum formatos
-│   ├── ILibro.java                   # Interfaz base
-│   ├── Libro.java                    # Entidad principal
-│   └── TipoLibro.java                # Enum tipos
-├── observer/
-│   └── Observer.java                 # Patrón Observer
-├── repository/
-│   └── LibroRepository.java          # Repositorio R2DBC
-├── service/
-│   └── LibroService.java             # Lógica de negocio
-├── strategy/
-│   └── SearchStrategy.java           # Patrón Strategy
-└── validator/
-    └── Validador.java                # Chain of Responsibility
-```
 
 ## Instalación y Ejecución
 
@@ -206,16 +168,3 @@ La base de datos H2 se inicializa automáticamente con datos de ejemplo:
 -- Ver datos en H2 Console
 SELECT * FROM libros;
 ```
-
-## Contribución
-
-El proyecto sigue las mejores prácticas de Java y Spring Boot:
-- Convenciones de naming de Java
-- Separación clara de responsabilidades
-- Documentación en código
-- Tests unitarios (expandible)
-- Configuración externalizada
-
-## Licencia
-
-Este proyecto es de uso educativo para demostrar patrones de diseño en Java.
